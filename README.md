@@ -19,7 +19,9 @@ ngDvHttpGet_DataChanged |     ***         | it will be raised when your data sou
 
 ```javascript
  
-  <ng-dv-http-get url="https://api.github.com/users/alchimya/repos"  remote-data="httpGETData">
+  <ng-dv-http-get 
+    url="https://api.github.com/users/alchimya/repos"  
+    remote-data="httpGETData">
      <table>
          <thead>
              <tr>
