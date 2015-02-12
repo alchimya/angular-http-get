@@ -2,7 +2,7 @@
 An AngularJs directive to request data via $http.get
 
 # How to use
-
+<h5>isolatd scope data</h5>
   attr name   |     type        |   description    
 --------------| ----------------|-------------------------------------------------------------------
 url           | one-way binding | Absolute or relative URL of the resource that is being requested
@@ -10,6 +10,7 @@ headers       | one-way binding | Map of strings or functions which return strin
 params        | one-way binding | Map of strings or objects which will be turned to ?key1=value1&key2=value2 after the url. If the value is not a string, it will be JSONified.
 remoteData    | two-way binding | Set here your data source  for the response body
 
+<h5>events</h5>
   event name            |     data        |   description    
 --------------          | ----------------|-------------------------------------------------------------------
 ngDvHttpGet_DataChanged |     ***         | it will be raised when your data source changes, generally if the the success promise method will be invoked
