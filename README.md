@@ -1,6 +1,15 @@
 # angular-http-get
-An AngularJs directive to request data via $http.get
+An AngularJs directive to request data via $http.get.
+<br/>
+With this directive you can consume the data requested to the remote server directly into the directive's body.
 
+```javascript
+<ng-dv-http-get 
+    url="https://api.github.com/users/alchimya/repos"  
+    remote-data="myDataObject">
+   	   <!--here your data presentation...see the complete example below-->
+ </ng-dv-http-get>
+```
 # How to use
 <h5>isolatd scope data</h5>
   attr name   |     type        |   description    
