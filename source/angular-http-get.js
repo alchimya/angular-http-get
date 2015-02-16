@@ -97,7 +97,7 @@ ngDvHttpGet.directive('ngDvHttpGet',function($http,$q,$compile){
 
             //send a get request to the remote HTTP server
             $http({
-                method: 'GET',
+                method: "GET",
                 url:scope.url ,
                 headers:scope.headers,
                 params:scope.params
@@ -109,12 +109,12 @@ ngDvHttpGet.directive('ngDvHttpGet',function($http,$q,$compile){
                 throw new Error(data.message + " " + status);
             });
 
-            scope.$watch('remoteData',function(newValue,oldValue){
+            scope.$watch("remoteData",function(newValue,oldValue){
                 //watch on the remoteData attribute
                 if (newValue==oldValue){
                     return;
                 }
-                scope.$emit('ngDvHttpGet_DataChanged');
+                scope.$emit("ngDvHttpGet_DataChanged");
             });
 
         }
