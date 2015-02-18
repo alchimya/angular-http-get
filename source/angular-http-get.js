@@ -69,8 +69,8 @@
  *   });
  *  -------------------------------------------------------------
  */
-var ngDvHttpGet=angular.module('ngDvHttpGet',[]);
-ngDvHttpGet.directive('ngDvHttpGet',function($http,$q,$compile){
+var ngDvHttpGetModule=angular.module('ngDvHttpGetModule',[]);
+ngDvHttpGetModule.directive('ngDvHttpGet',function($http,$q,$compile){
 
     return{
         restrict:'E',
