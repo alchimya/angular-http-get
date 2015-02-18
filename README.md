@@ -5,7 +5,7 @@ With this directive you can consume the data requested to the remote server dire
 
 ```javascript
 <ng-dv-http-get 
-    url="https://api.github.com/users/alchimya/repos"  
+    url="http://my_url"  
     remote-data="myDataObject">
    	   <!--here your data presentation...see the complete example below-->
  </ng-dv-http-get>
